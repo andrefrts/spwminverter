@@ -176,17 +176,20 @@ dentre os objetos de estudo deste projeto mostrou-se a mais eficaz em relação 
                               <h4 class="subheading"></h4>
                           </div>
                           <div class="timeline-body">
-                              <p class="text-muted"><p>Smart Braille é uma aplicação para smartphones que utiliza a API da Google Mobile Vision.</p>
-				  <p> A aplicação consiste na importação da ferramenta Text Recognizer que em seguida iniciase
-					a permissão para usar a câmera para a análise quadro a
-					quadro da imagem capturada. Ao verificar um quadro, o Text
-					Recognizer identifica ou não caraceteres, em caso de detecção
-					de caracteres o código se encarrega de organizar as caracteres
-					em palavras, as palavras em linhas e as linhas em blocos. 
+                              <p class="text-muted"><p> A topologia utilizada para a execução do projeto foi a topologia de ponte H, onde a tensão
+de entrada é constante porém a tensão na carga é controlada utilizando os chaveamentos em cada perna da topologia. A modulação em SPWM utilizada utiliza-se
+de uma onda portadora com sinal triangular com o sinal modulante sendo uma senoidal. 
 				  </p>
+
+				  <p> 
+					A tensão de saída é controlada pela variação dos estados ligados e desligados do chaveamento. O  SPWM  unipolar  
+requer  uma  onda  portadora triangular  na  frequência  de  chaveamento  e  um  dois sinais moduladores senoidais com defasamento
+ de 180º frequência fundamental. O microcontrolador STM32F103C8T6 foi escolhido ter 32 bits e sua frequência de click ser de 72 Mhz para gerar
+pulsos PWM.
+				</p>
 				   <h1 class="brand-heading">&nbsp;</h1>
 				  <p>
-				  O fluxograma da aplicação pode ser conferido na imagem abaixo:
+				  O fluxograma do código para gerar os pulsos PWM pode ser conferido na imagem abaixo:
 				  </p>
 				   <h1 class="brand-heading">&nbsp;</h1>
 				  </p>
